@@ -1,0 +1,476 @@
+/*сброс margin*/
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*скрытие заголовка*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*основной текст*/
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+  background: var(--color-button-text);
+}
+
+:root {
+  /*цвет кнопок, hover и focus элементов*/
+  --color-for-hovered: #2196f3;
+  /*цвет заголовков*/
+  --color-for-title: #212121;
+  /*цвет текста и кнопок*/
+  --color-button-text: #ffffff;
+  --color-text: #757575;
+  /*цвет studio*/
+  --color-studio: #000000;
+  /*цвет footer*/
+  --color-footer: #2f303a;
+  /*background карточки*/
+  --color-background-cart: #ffffff;
+  /*background наша команда*/
+  --color-background: #f5f4fa;
+  /*background hero*/
+  --color-background-hero: #c4c4c4;
+  /*соц. сети фон*/
+  --color-fill: #afb1b8;
+}
+
+.list {
+  /*display: flex;
+  justify-content: space-between;*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-padding {
+  padding-top: 0;
+}
+
+/*расстановка навигации*/
+.container-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head nav {
+  display: flex;
+  align-items: center;
+}
+
+header .studio {
+  margin-right: 93px;
+}
+
+.menu-nav {
+  display: flex;
+}
+
+.menu-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-nav a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.mail-tel {
+  display: flex;
+  margin-left: auto;
+}
+
+.mail-tel li:not(:last-child) {
+  margin-right: 50px;
+}
+
+/*web*/
+.web,
+.studio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+  color: var(--color-for-hovered);
+}
+
+/*studio*/
+.studio {
+  color: var(--color-studio);
+}
+
+/*навигация*/
+.nav-link,
+.mail-and-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-for-title);
+}
+
+/*почта + телефон*/
+.mail-and-tel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-text);
+}
+
+.mail-and-tel svg {
+  margin-right: 10px;
+}
+
+.nav-link.current {
+  color: var(--color-for-hovered);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.mail-and-tel:hover,
+.mail-and-tel:focus,
+.footer-link:hover,
+.footer-link:focus,
+.adress:hover,
+.adress:focus {
+  color: var(--color-for-hovered);
+  fill: var(--color-for-hovered);
+}
+
+/* эффект */
+.hero {
+  height: 600px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--color-background-hero);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*заголовки*/
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: var(--color-button-text);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--color-for-title);
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  color: var(--color-for-title);
+}
+
+/*кнопка*/
+.hero-but {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  border: none;
+  color: var(--color-button-text);
+  background: var(--color-for-hovered);
+}
+
+.hero-but:hover,
+.hero-but:focus {
+  cursor: pointer;
+  color: var(--color-for-hovered);
+  background: var(--color-button-text);
+}
+
+.button-filtr:hover,
+.button-filtr:focus {
+  cursor: pointer;
+  color: var(--color-button-text);
+  background: var(--color-for-hovered);
+}
+
+/* иконки на Наші особливості */
+
+.skills-item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: var(--color-background);
+  margin-bottom: 30px;
+}
+
+/* карточки */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+p {
+  line-height: 1.71;
+}
+
+.skills-item {
+  width: 270px;
+  margin-left: 30px;
+}
+
+.skills-work {
+  display: inline-block;
+  width: 270px;
+  margin-left: 30px;
+}
+
+.skills-team {
+  display: inline-block;
+  width: 270px;
+  margin-left: 30px;
+  margin-bottom: 16px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.work {
+  width: 370px;
+}
+
+.comand-background {
+  background: var(--color-background);
+}
+
+/*бордер под карточками*/
+.border-class {
+  border: 1px solid var(--color-border);
+  border-top: none;
+}
+
+/*фамилии*/
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--color-for-title);
+}
+
+/*профессии*/
+.team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.teams {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--color-background-cart);
+}
+
+/* социальные ссылки */
+.social-link {
+  display: flex;
+
+  justify-content: space-around;
+  fill: var(--color-fill);
+}
+
+.social-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-link li:not(:last-child) a {
+  margin-right: 10px;
+}
+
+.social-link a:hover,
+.social-link a:focus {
+  fill: var(--color-button-text);
+  background-color: var(--color-for-hovered);
+}
+
+/* наши клиенты */
+.our-clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-clients li {
+  display: inline-block;
+}
+
+.our-clients-list svg {
+  fill: var(--color-fill);
+}
+
+.our-clients-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-fill);
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+.our-clients-list a:hover,
+.our-clients-list a:focus,
+.our-clients-list a:hover svg,
+.our-clients-list a:focus svg {
+  border-color: var(--color-for-hovered);
+  fill: var(--color-for-hovered);
+}
+
+/* футер */
+.footer {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+footer {
+  background: var(--color-footer);
+}
+
+.logo-adress {
+  width: 231px;
+}
+
+.adress {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color-button-text);
+}
+
+.footer-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.studio-footer {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-button-text);
+}
+
+.footer-adress li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* социальные ссылки */
+.fotter-social {
+  margin-left: 70px;
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: space-around;
+  fill: var(--color-button-text);
+}
+
+.social-link-footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.fotter-social b {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.social-link-footer a {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--color-for-btn-caption);
+}
+
+.social-link-footer li:not(:last-child) a {
+  margin-right: 10px;
+}
+
+.social-link-footer a:hover,
+.social-link-footer a:focus {
+  background-color: var(--color-for-hovered);
+}
