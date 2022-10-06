@@ -28,6 +28,7 @@ body {
   font-style: normal;
   font-size: 16px;
   letter-spacing: 0.03em;
+
   color: var(--color-text);
   background: var(--color-button-text);
 }
@@ -53,9 +54,10 @@ body {
 }
 
 .list {
-  list-style: none;
   padding: 0;
   margin: 0;
+
+  list-style: none;
 }
 
 a {
@@ -75,6 +77,10 @@ a {
 }
 
 /*расстановка навигации*/
+header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .container-nav {
   display: flex;
   flex-direction: row;
@@ -122,6 +128,7 @@ header .studio {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
   color: var(--color-for-hovered);
 }
 
@@ -137,6 +144,7 @@ header .studio {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--color-for-title);
 }
 
@@ -145,6 +153,8 @@ header .studio {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  fill: var(--color-text);
   color: var(--color-text);
 }
 
@@ -174,6 +184,7 @@ h2 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--color-for-title);
 }
 
@@ -190,17 +201,21 @@ h2 {
 }
 
 .button-filtr {
+  display: inline-block;
   padding: 6px 22px;
   min-width: 73px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  display: inline-block;
+
+  border: none;
+  border-radius: 4px;
+
   background: var(--color-background);
   color: var(--color-for-title);
-  border-radius: 4px;
 }
 
 .button-filtr:hover,
@@ -218,6 +233,12 @@ h2 {
   flex-wrap: wrap;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .skills-item {
   display: inline-block;
   width: 370px;
@@ -227,11 +248,18 @@ h2 {
 /*проект текст*/
 p {
   line-height: 1.87;
+
+  color: var(--color-text);
 }
 
 .skills-item:hover,
 .skills-item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+/*убираем margin в 3-х последних картах*/
+.skill-list li:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
 /*название проектов*/
@@ -241,20 +269,22 @@ p {
 
 /*бордер под карточками*/
 .border-class {
+  padding: 20px 24px;
+
   border: 1px solid var(--color-border);
   border-top: none;
-  padding: 20px 24px;
 }
 
 /* футер */
 .footer {
-  padding: 60px 0;
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 
 footer {
+  padding: 60px 0;
+
   background: var(--color-footer);
 }
 
@@ -262,11 +292,16 @@ footer {
   width: 231px;
 }
 
+.logo {
+  margin-bottom: 20px;
+}
+
 .adress {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
   color: var(--color-button-text);
 }
 
@@ -275,6 +310,7 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -283,6 +319,7 @@ footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
   color: var(--color-button-text);
 }
 
@@ -298,6 +335,7 @@ footer {
 .social-link-footer {
   display: flex;
   justify-content: space-around;
+
   fill: var(--color-button-text);
 }
 
@@ -313,9 +351,11 @@ footer {
 .fotter-social b {
   display: block;
   margin-bottom: 20px;
+
   font-size: 14px;
   line-height: 1.14em;
   text-transform: uppercase;
+  
   color: #ffffff;
 }
 

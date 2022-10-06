@@ -28,6 +28,7 @@ body {
   font-style: normal;
   font-size: 14px;
   letter-spacing: 0.03em;
+
   color: var(--color-text);
   background: var(--color-button-text);
 }
@@ -130,6 +131,7 @@ header .studio {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.02em;
+
   color: var(--color-for-hovered);
 }
 
@@ -145,6 +147,7 @@ header .studio {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--color-for-title);
 }
 
@@ -153,6 +156,8 @@ header .studio {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  fill: var(--color-text);
   color: var(--color-text);
 }
 
@@ -182,8 +187,11 @@ header .studio {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
+
   background-color: var(--color-background-hero);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -192,21 +200,25 @@ header .studio {
 
 /*заголовки*/
 h1 {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
+
   color: var(--color-button-text);
 }
 
 h2 {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-bottom: 50px;
+
   color: var(--color-for-title);
 }
 
@@ -215,20 +227,23 @@ h3 {
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 10px;
+
   color: var(--color-for-title);
 }
 
 /*кнопка*/
 .hero-but {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 216px;
   border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  
   color: var(--color-button-text);
   background: var(--color-for-hovered);
 }
@@ -236,6 +251,7 @@ h3 {
 .hero-but:hover,
 .hero-but:focus {
   cursor: pointer;
+
   color: var(--color-for-hovered);
   background: var(--color-button-text);
 }
@@ -243,6 +259,7 @@ h3 {
 .button-filtr:hover,
 .button-filtr:focus {
   cursor: pointer;
+
   color: var(--color-button-text);
   background: var(--color-for-hovered);
 }
@@ -254,8 +271,9 @@ h3 {
   align-items: center;
   justify-content: center;
   height: 120px;
-  background-color: var(--color-background);
   margin-bottom: 30px;
+  
+  background-color: var(--color-background);
 }
 
 /* карточки */
@@ -290,6 +308,7 @@ p {
   width: 270px;
   margin-left: 30px;
   margin-bottom: 16px;
+
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
@@ -303,8 +322,9 @@ p {
 
 /*бордер под карточками*/
 .border-class {
-  border: 1px solid var(--color-border);
   border-top: none;
+
+  border: 1px solid var(--color-border);
 }
 
 /*фамилии*/
@@ -312,6 +332,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+
   color: var(--color-for-title);
 }
 
@@ -326,14 +347,19 @@ p {
 .teams {
   padding-top: 30px;
   padding-bottom: 30px;
+
   background-color: var(--color-background-cart);
+}
+
+.teams p {
+  margin-bottom: 16px;
 }
 
 /* социальные ссылки */
 .social-link {
   display: flex;
+  justify-content: center;
 
-  justify-content: space-around;
   fill: var(--color-fill);
 }
 
@@ -390,13 +416,14 @@ p {
 
 /* футер */
 .footer {
-  padding: 60px 0;
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 
 footer {
+  padding: 60px 0;
+
   background: var(--color-footer);
 }
 
@@ -404,11 +431,16 @@ footer {
   width: 231px;
 }
 
+.logo {
+  margin-bottom: 20px;
+}
+
 .adress {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
   color: var(--color-button-text);
 }
 
@@ -417,6 +449,7 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -425,6 +458,7 @@ footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
   color: var(--color-button-text);
 }
 
@@ -440,6 +474,7 @@ footer {
 .social-link-footer {
   display: flex;
   justify-content: space-around;
+
   fill: var(--color-button-text);
 }
 
@@ -455,9 +490,11 @@ footer {
 .fotter-social b {
   display: block;
   margin-bottom: 20px;
+  
   font-size: 14px;
   line-height: 1.14em;
   text-transform: uppercase;
+
   color: #ffffff;
 }
 
