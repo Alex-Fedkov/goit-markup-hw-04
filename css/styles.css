@@ -192,7 +192,7 @@ header .studio {
 
   background-color: var(--color-background-hero);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-background.jpg);
+  url(../images/hero-background.jpg); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -359,8 +359,6 @@ p {
 .social-link {
   display: flex;
   justify-content: center;
-
-  fill: var(--color-fill);
 }
 
 .social-link a {
@@ -370,6 +368,12 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  color: var(--color-fill);
+}
+
+.social-link svg {
+  fill: currentColor;
 }
 
 .social-link li:not(:last-child) a {
@@ -378,8 +382,8 @@ p {
 
 .social-link a:hover,
 .social-link a:focus {
-  fill: var(--color-button-text);
-  background-color: var(--color-for-hovered);
+  color: var(--color-button-text);
+  background-color: var(--color-for-hovered); 
 }
 
 /* наши клиенты */
